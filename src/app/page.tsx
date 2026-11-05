@@ -4,6 +4,7 @@ import site from "@/data/site.json";
 import LeadershipCarousel from "@/components/LeadershipCarousel";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AccreditationCarousel from "@/components/AccreditationCarousel";
 
 function Placeholder({ label, className = "" }: { label: string; className?: string }) {
     return <div className={`placeholder ${className}`} role="img" aria-label={`${label} placeholder image`}><span>{label}</span></div>;
@@ -36,7 +37,10 @@ export default function Home() {
                         {site.iqac.metrics.map((metric) => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
                     </div>
                     <div className="principle-panels">
-                        {site.iqac.panels.map((panel) => <article key={panel.title}><Placeholder label={panel.title === "Vision" ? images.vision.label : images.objectives.label} /><div><h3>{panel.title}</h3><p>{panel.text}</p></div></article>)}
+                        {site.iqac.panels.map((panel) => {
+                            const image = panel.title === "Vision" ? images.vision : images.objectives;
+                            return <article key={panel.title}><div className="panel-image-wrap"><img className="panel-image" src={image.src} alt={image.alt} /></div><div className="panel-copy"><h3>{panel.title}</h3><p>{panel.text}</p></div></article>;
+                        })}
                     </div>
                 </div>
                 <div className="director-card"><Placeholder label={images.director.label} /><div className="director-copy"><p className="eyebrow light">{site.iqac.director.role}</p><h2>{site.iqac.director.name}</h2><p>{site.iqac.director.text}</p></div></div>
@@ -47,7 +51,7 @@ export default function Home() {
 
             <section id="outcomes" className="accreditation section-shell">
                 <Reveal><h2>{site.accreditation.title[0]}<br />{site.accreditation.title[1]}<br /><em>{site.accreditation.title[2]}</em></h2></Reveal>
-                <div className="badge-row">{site.accreditation.badges.map((badge) => <Placeholder key={badge} label={badge} className="badge-placeholder" />)}</div>
+                <AccreditationCarousel />
             </section>
 
             {/* University Quality Statement section*/}

@@ -28,7 +28,12 @@
   },
   "accreditation": {
     "title": ["Approvals,", "Accreditation,", "Memberships & Rankings"],
-    "badges": ["NAAC", "PCI", "WURI", "A+ Grade"]
+    "badges": [
+      { "label": "WURI", "asset": "/assests/badges/wuri.png" },
+      { "label": "Pharmacy Council of India", "asset": "/assests/badges/pcoi.png" },
+      { "label": "Council of India", "asset": "/assests/badges/coi.png" },
+      { "label": "NAAC A+ Grade", "asset": "/assests/badges/naac.png" }
+    ]
   },
   "statement": {
     "title": ["University Quality", "Statement"],
