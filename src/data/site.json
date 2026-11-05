@@ -1,0 +1,79 @@
+{
+  "brand": { "name": "Uttaranchal University", "subtitle": "Dehradun", "location": "Dehradun, India" },
+  "navigation": [
+    { "label": "Our teams", "href": "#teams" },
+    { "label": "Outcomes", "href": "#outcomes" },
+    { "label": "Sustainability", "href": "#sustainability" }
+  ],
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": ["Our", "commitment to", "educational excellence."],
+    "intro": "Welcome to this section! Here, you can explore the key initiatives and programs that define our commitment to quality assurance and enhancement."
+  },
+  "iqac": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": "IQAC",
+    "subtitle": "Committed to achieve excellence together",
+    "metrics": [
+      { "value": "90+", "label": "MoUs" },
+      { "value": "10+", "label": "Schools" },
+      { "value": "40+", "label": "Committees" },
+      { "value": "50+", "label": "Policies and Procedures" }
+    ],
+    "panels": [
+      { "title": "Vision", "text": "To ensure quality culture as the prime concern for the Higher Education Institutions through institutionalizing and internalizing all the initiatives taken with internal and external support." },
+      { "title": "Objectives", "text": "To develop a system for conscious, consistent and catalytic action to improve the academic and administrative performance of the institution." }
+    ],
+    "director": { "name": "Er. Rajesh Deorari", "role": "Director-IQAC", "text": "The Internal Quality Assurance Cell supports a culture of continuous improvement through thoughtful academic and administrative quality practices." }
+  },
+  "accreditation": {
+    "title": ["Approvals,", "Accreditation,", "Memberships & Rankings"],
+    "badges": ["NAAC", "PCI", "WURI", "A+ Grade"]
+  },
+  "statement": {
+    "title": ["University Quality", "Statement"],
+    "text": "To strive for worldwide excellence in all of our endeavours, including teaching-learning, research, consultancy, outreach, societal upliftment and remain accountable in our core and support functions through self-evaluation and continuous upgrading methodologies.",
+    "action": "Read more"
+  },
+  "videos": {
+    "title": "Videos Gallery",
+    "text": "Explore conversations and stories from the people shaping quality and progress across our university.",
+    "viewMore": "View more videos",
+    "items": [
+      { "date": "23 May 2026", "role": "Associate Director TERI", "title": "Prof. Livleen K. Kahlon" },
+      { "date": "23 May 2026", "role": "Associate Director TERI", "title": "Prof. Livleen K. Kahlon" },
+      { "date": "23 May 2026", "role": "Associate Director TERI", "title": "Prof. Livleen K. Kahlon" }
+    ]
+  },
+  "leadership": {
+    "title": "Leadership Messages",
+    "text": "The team spirit in the IQAC is not to serve as a data center, but rather as a way to bring together Administrators, Teachers, Students, Support staff, and all other Stakeholders, allowing each of them to contribute to the University's overall improvement.",
+    "messages": [
+      {
+        "quote": "Our IQAC office is committed to enhancing academic quality, driving continuous improvement, and fostering innovation. Their efforts elevate the university’s standards, contributing to our growth, excellence, and long-term institutional success.",
+        "name": "Jitender Joshi",
+        "role": "President"
+      },
+      {
+        "quote": "Quality is a shared responsibility. Together, our academic community turns reflection into action and action into lasting institutional improvement.",
+        "name": "Er. Rajesh Deorari",
+        "role": "Director-IQAC"
+      }
+    ]
+  },
+  "publications": {
+    "title": ["IQAC Publications", "& Reports"],
+    "text": "The Internal Quality Assurance Cell (IQAC), Uttaranchal University, documents and disseminates key Institutional Publications and Reports as part of its mandate to strengthen quality assurance, academic governance, and continuous institutional improvement. These publications include flagship quality reports, policy documents, best-practice compendiums, accreditation and ranking support documents, and proceedings of IQAC-led workshops and capacity-building initiatives."
+  },
+  "news": {
+    "title": ["News &", "Events"],
+    "text": "Welcome to the IQAC News and Updates section! Stay informed about our quality assurance initiatives, upcoming events, and achievements as we strive for excellence in education and foster community engagement.",
+    "viewMore": "View more news",
+    "items": [
+      { "category": "IQAC", "date": "24 May 2025", "title": "Training on Eco-Friendly Holi Colours Organized by Uttaranchal University" },
+      { "category": "IQAC", "date": "24 May 2025", "title": "Training on Eco-Friendly Holi Colours Organized by Uttaranchal University" },
+      { "category": "IQAC", "date": "24 May 2025", "title": "Training on Eco-Friendly Holi Colours Organized by Uttaranchal University" }
+    ]
+  },
+  "footer": { "text": "Committed to quality assurance, academic governance, and continuous institutional improvement.", "note": "IQAC homepage" }
+}

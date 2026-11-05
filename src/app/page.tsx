@@ -1,93 +1,82 @@
 import Reveal from "@/components/Reveal";
+import images from "@/data/images.json";
+import site from "@/data/site.json";
+import LeadershipCarousel from "@/components/LeadershipCarousel";
 
-const principles = [
-  { number: "01", title: "Clear by design", text: "Every interaction guides students forward with focus, rhythm, and purpose." },
-  { number: "02", title: "Bold, never loud", text: "Confident blue foundations meet warm amber moments that reward attention." },
-  { number: "03", title: "Built to move", text: "A fluid motion language makes digital experiences feel considered and alive." },
-];
+function Placeholder({ label, className = "" }: { label: string; className?: string }) {
+  return <div className={`placeholder ${className}`} role="img" aria-label={`${label} placeholder image`}><span>{label}</span></div>;
+}
 
 export default function Home() {
   return (
     <main>
+      <div className="top-strip" />
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Uttaranchal University home">
-          <span className="brand-mark">U</span>
-          <span>Uttaranchal<br /><b>University</b></span>
+        <a className="brand" href="#top" aria-label={`${site.brand.name} home`}>
+          <span className="brand-symbol">UU</span>
+          <span>{site.brand.name}<small>{site.brand.subtitle}</small></span>
         </a>
         <nav className="nav-links" aria-label="Main navigation">
-          <a href="#principles">Principles</a>
-          <a href="#palette">Palette</a>
-          <a href="#motion">Motion</a>
+          {site.navigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
         </nav>
-        <a className="header-action" href="#start">Explore system <span>↗</span></a>
+        <button className="menu-button" aria-label="Open navigation"><span /><span /><span /></button>
       </header>
 
-      <section id="top" className="hero">
-        <div className="hero-orb orb-one" />
-        <div className="hero-orb orb-two" />
-        <div className="hero-copy">
-          <p className="eyebrow">01 / Foundation</p>
-          <h1>Make room<br /><em>to grow.</em></h1>
-          <p className="hero-intro">A living design system for a university that moves with curiosity, purpose, and possibility.</p>
-          <a className="primary-button" href="#principles">Discover the system <span>↓</span></a>
-        </div>
-        <div className="hero-note">
-          <span className="vertical-line" />
-          <p>Uttaranchal University<br /><small>Dehradun · India</small></p>
-        </div>
-        <div className="hero-scroll">Scroll to explore <span>↓</span></div>
-      </section>
-
-      <section id="principles" className="section principles">
-        <Reveal><p className="eyebrow blue">02 / Principles</p></Reveal>
-        <Reveal><h2>Designed for the<br /><span>next chapter.</span></h2></Reveal>
-        <div className="principle-grid">
-          {principles.map((principle) => (
-            <Reveal key={principle.number} className="principle-card">
-              <span className="card-number">{principle.number}</span>
-              <h3>{principle.title}</h3>
-              <p>{principle.text}</p>
-              <span className="card-arrow">↗</span>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section id="palette" className="palette-section">
-        <div className="section palette-heading">
-          <Reveal><p className="eyebrow">03 / Color language</p></Reveal>
-          <Reveal><h2>Color carries<br /><span>the feeling.</span></h2></Reveal>
-          <Reveal><p className="section-copy">A blue-led palette creates a calm, confident canvas. Amber marks the moments that matter.</p></Reveal>
-        </div>
-        <div className="swatches">
-          <div className="swatch swatch-blue"><span>University Blue</span><b>#16437D</b></div>
-          <div className="swatch swatch-amber"><span>Amber</span><b>#FCA700</b></div>
-          <div className="swatch swatch-sky"><span>Sky</span><b>#A2DAF7</b></div>
-          <div className="swatch swatch-page"><span>Page</span><b>#F5F5F5</b></div>
-        </div>
-      </section>
-
-      <section id="motion" className="section motion-section">
-        <Reveal><p className="eyebrow blue">04 / Motion</p></Reveal>
-        <div className="motion-layout">
-          <Reveal><h2>Stay curious.<br /><span>Keep moving.</span></h2></Reveal>
-          <Reveal><p className="section-copy">Lenis smooth scroll and GSAP transitions create a gentle sense of momentum — never distracting, always human.</p></Reveal>
-        </div>
-        <Reveal className="motion-card">
-          <div className="motion-card-line" />
-          <span>THE UNIVERSITY OF TOMORROW</span>
-          <strong>Learn<br /><i>without limits.</i></strong>
-          <span className="motion-card-mark">UU / 2024</span>
+      <section id="top" className="hero section-shell">
+        <Reveal className="hero-copy">
+          <p className="eyebrow">{site.hero.eyebrow}</p>
+          <h1>{site.hero.title[0]}<br />{site.hero.title[1]}<br /><em>{site.hero.title[2]}</em></h1>
+          <p className="hero-intro">{site.hero.intro}</p>
         </Reveal>
+        <Reveal className="hero-media"><Placeholder label={images.hero.label} /></Reveal>
       </section>
 
-      <footer id="start">
-        <div className="footer-top">
-          <div><p className="eyebrow">05 / Begin here</p><h2>Build what’s<br /><em>possible.</em></h2></div>
-          <a className="primary-button light" href="#top">Back to top <span>↑</span></a>
+      <section id="teams" className="iqac-section">
+        <div className="iqac-intro">
+          <Reveal><p className="eyebrow light">{site.iqac.eyebrow}</p><h2>{site.iqac.title}</h2><p>{site.iqac.subtitle}</p></Reveal>
+          <div className="metrics">
+            {site.iqac.metrics.map((metric) => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
+          </div>
+          <div className="principle-panels">
+            {site.iqac.panels.map((panel) => <article key={panel.title}><Placeholder label={panel.title === "Vision" ? images.vision.label : images.objectives.label} /><div><h3>{panel.title}</h3><p>{panel.text}</p></div></article>)}
+          </div>
         </div>
-        <div className="footer-bottom"><span>Uttaranchal University</span><span>Design system · v1.0</span><span>Dehradun, India</span></div>
-      </footer>
+        <div className="director-card"><Placeholder label={images.director.label} /><div className="director-copy"><p className="eyebrow light">{site.iqac.director.role}</p><h2>{site.iqac.director.name}</h2><p>{site.iqac.director.text}</p></div></div>
+      </section>
+
+      <section id="outcomes" className="accreditation section-shell">
+        <Reveal><h2>{site.accreditation.title[0]}<br />{site.accreditation.title[1]}<br /><em>{site.accreditation.title[2]}</em></h2></Reveal>
+        <div className="badge-row">{site.accreditation.badges.map((badge) => <Placeholder key={badge} label={badge} className="badge-placeholder" />)}</div>
+      </section>
+
+      <section className="statement section-shell">
+        <Reveal className="statement-copy"><h2>{site.statement.title[0]}<br />{site.statement.title[1]}</h2><p>{site.statement.text}</p><a className="blue-button" href="#publications">{site.statement.action}<span>↗</span></a></Reveal>
+        <Reveal><Placeholder label={images.statement.label} className="wide-placeholder" /></Reveal>
+      </section>
+
+      <section id="videos" className="video-section">
+        <div className="section-shell section-heading"><Reveal><h2>{site.videos.title}</h2><p>{site.videos.text}</p></Reveal></div>
+        <div className="video-grid">{site.videos.items.map((video, index) => <article key={`${video.title}-${index}`}><Placeholder label={images.video.label} /><div className="video-caption"><span>{video.date}</span><p>{video.role}</p><h3>{video.title}</h3></div></article>)}</div>
+        <div className="section-action"><a className="blue-button" href="#videos">{site.videos.viewMore}<span>↗</span></a></div>
+      </section>
+
+      <section className="leadership section-shell">
+        <Reveal className="leadership-copy"><h2>{site.leadership.title}</h2><p>{site.leadership.text}</p></Reveal>
+        <LeadershipCarousel />
+      </section>
+
+      <section id="publications" className="publication section-shell">
+        <Reveal><h2>{site.publications.title[0]}<br /><em>{site.publications.title[1]}</em></h2><p>{site.publications.text}</p></Reveal>
+        <Reveal><Placeholder label={images.publication.label} className="publication-placeholder" /></Reveal>
+      </section>
+
+      <section id="sustainability" className="news section-shell">
+        <Reveal className="section-heading"><h2>{site.news.title[0]} <em>{site.news.title[1]}</em></h2><p>{site.news.text}</p></Reveal>
+        <div className="news-grid">{site.news.items.map((item, index) => <article key={`${item.title}-${index}`}><Placeholder label={images.news.label} /><div><span>{item.category}</span><time>{item.date}</time><h3>{item.title}</h3><a href="#top" aria-label={`Read ${item.title}`}>↗</a></div></article>)}</div>
+        <div className="section-action"><a className="blue-button" href="#sustainability">{site.news.viewMore}<span>↗</span></a></div>
+      </section>
+
+      <footer><div className="footer-main"><div className="brand"><span className="brand-symbol">UU</span><span>{site.brand.name}<small>{site.brand.subtitle}</small></span></div><p>{site.footer.text}</p></div><div className="footer-bottom"><span>{site.brand.name}</span><span>{site.footer.note}</span><span>{site.brand.location}</span></div></footer>
     </main>
   );
 }

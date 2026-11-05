@@ -1,0 +1,11 @@
+{
+  "hero": { "label": "Hero image", "alt": "IQAC homepage hero placeholder" },
+  "director": { "label": "Director portrait", "alt": "IQAC director portrait placeholder" },
+  "vision": { "label": "Vision image", "alt": "Vision section placeholder" },
+  "objectives": { "label": "Objectives image", "alt": "Objectives section placeholder" },
+  "statement": { "label": "Quality statement image", "alt": "Quality statement placeholder" },
+  "video": { "label": "Video thumbnail", "alt": "Video thumbnail placeholder" },
+  "leader": { "label": "President portrait", "alt": "President portrait placeholder" },
+  "publication": { "label": "Publication cover", "alt": "Publication cover placeholder" },
+  "news": { "label": "News image", "alt": "News image placeholder" }
+}
