@@ -129,6 +129,40 @@ p {
     width: 48px;
 }
 
+.back-to-top {
+    align-items: center;
+    background: var(--amber);
+    border: 0;
+    border-radius: 50%;
+    bottom: 24px;
+    color: var(--blue-deep);
+    cursor: pointer;
+    display: flex;
+    font-size: 24px;
+    height: 48px;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 24px;
+    transform: translateY(14px);
+    transition: opacity .25s ease, transform .25s ease, background .25s ease;
+    width: 48px;
+    z-index: 20;
+}
+
+.back-to-top.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--blue);
+    color: white;
+    transform: translateY(-3px);
+}
+
 .section-shell {
     margin: auto;
     max-width: 1240px;
@@ -793,6 +827,13 @@ footer {
     .site-header {
         height: 92px;
         padding: 0 22px;
+    }
+
+    .back-to-top {
+        bottom: 18px;
+        height: 44px;
+        right: 18px;
+        width: 44px;
     }
 
     .nav-links {

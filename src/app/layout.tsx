@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, Instrument_Sans, Oswald } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
+import BackToTop from "@/components/BackToTop";
 
 const oswald = Oswald({
   variable: "--font-oswald",
@@ -31,7 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${oswald.variable} ${dmSans.variable} ${instrument.variable}`}>
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          {children}
+          <BackToTop />
+        </SmoothScroll>
       </body>
     </html>
   );
