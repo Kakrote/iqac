@@ -39,7 +39,18 @@ export default function Home() {
                     <div className="principle-panels">
                         {site.iqac.panels.map((panel) => {
                             const image = panel.title === "Vision" ? images.vision : images.objectives;
-                            return <article key={panel.title}><div className="panel-image-wrap"><img className="panel-image" src={image.src} alt={image.alt} /></div><div className="panel-copy"><h3>{panel.title}</h3><p>{panel.text}</p></div></article>;
+                            return <article key={panel.title}>
+                                <div className="panel-image-wrap">
+                                    <img className="panel-image" src={image.src} alt={image.alt} />
+                                </div>
+                                <div className="panel-copy">
+                                    <h3>{panel.title}
+                                    </h3>
+                                    <p>{panel.text}
+
+                                    </p>
+                                </div>
+                            </article>;
                         })}
                     </div>
                 </div>
