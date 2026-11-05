@@ -229,6 +229,13 @@ h1 em {
     height: 580px;
 }
 
+.hero-image {
+    display: block;
+    height: 580px;
+    object-fit: cover;
+    width: 100%;
+}
+
 .iqac-section {
     background: linear-gradient(112deg, var(--blue-deep), var(--blue));
     color: white;
@@ -407,7 +414,9 @@ h1 em {
     display: flex;
     flex-direction: column;
     gap: 22px;
-    /* padding: 34px; */
+    min-width: 0;
+    overflow: hidden;
+    width: 100%;
 }
 
 .accreditation-slide {
@@ -428,6 +437,7 @@ h1 em {
     flex-direction: column;
     flex-shrink: 0;
     gap: 18px;
+    min-width: 0;
 }
 
 .badge-label {
@@ -818,6 +828,10 @@ footer {
         height: 340px;
     }
 
+    .hero-image {
+        height: 340px;
+    }
+
     .iqac-intro {
         padding: 65px 22px;
     }
@@ -842,8 +856,21 @@ footer {
         padding-top: 70px;
     }
 
-    .badge-row {
+    .accreditation-slide {
         gap: 12px;
+    }
+
+    .accreditation-badge {
+        gap: 10px;
+    }
+
+    .badge-placeholder {
+        width: min(150px, 100%);
+    }
+
+    .badge-label {
+        font-size: 11px;
+        line-height: 1.2;
     }
 
     .statement,

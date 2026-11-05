@@ -1,5 +1,5 @@
 {
-  "hero": { "label": "Hero image", "alt": "IQAC homepage hero placeholder" },
+  "hero": { "src": "/assests/hero/h.jpg", "alt": "Uttaranchal University campus" },
   "director": { "label": "Director portrait", "alt": "IQAC director portrait placeholder" },
   "vision": { "src": "/assests/bg/vission.jpg", "label": "Vision image", "alt": "Vision section" },
   "objectives": { "src": "/assests/bg/objective.jpg", "label": "Objectives image", "alt": "Objectives section" },

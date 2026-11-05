@@ -24,7 +24,7 @@ export default function Home() {
                     <h1>{site.hero.title[0]}<br />{site.hero.title[1]}<br /><em>{site.hero.title[2]}</em></h1>
                     <p className="hero-intro">{site.hero.intro}</p>
                 </Reveal>
-                <Reveal className="hero-media"><Placeholder label={images.hero.label} /></Reveal>
+                <Reveal className="hero-media"><img className="hero-image" src={images.hero.src} alt={images.hero.alt} /></Reveal>
             </section>
 
 
