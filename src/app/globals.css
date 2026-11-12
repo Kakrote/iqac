@@ -149,10 +149,9 @@ p {
 .menu-panel {
     background: var(--page);
     border-left: 4px solid var(--amber);
-    display: grid;
-    gap: 0;
+    display: block;
     min-width: 0;
-    padding: 72px 20px 20px;
+    padding: 64px 20px 16px;
     position: fixed;
     right: 0;
     top: 0;
@@ -195,9 +194,10 @@ p {
     color: var(--blue);
     display: flex;
     font-family: var(--font-instrument), sans-serif;
-    font-size: 13px;
-    min-height: 36px;
-    padding: 5px 12px;
+    font-size: 15px;
+    line-height: 1.2;
+    min-height: 30px;
+    padding: 3px 12px;
     text-transform: uppercase;
     transition: background .2s ease, color .2s ease;
 }
@@ -235,11 +235,13 @@ p {
 
 .desktop-menu-links {
     display: grid;
+    gap: 30px;
 }
 
 .desktop-menu-links a {
     justify-content: flex-start;
     text-align: left;
+    padding: 13px 0 13px 12px;
 }
 
 .mobile-menu-links {
@@ -1150,7 +1152,7 @@ footer {
     }
 
     .menu-panel {
-        padding: 72px 16px 20px;
+        padding: 64px 16px 16px;
     }
 
     .desktop-menu-links {
@@ -1159,12 +1161,13 @@ footer {
 
     .mobile-menu-links {
         display: grid;
+        gap: 16px;
     }
 
     .mobile-menu-links a {
         justify-content: flex-start;
-        min-height: 36px;
-        padding: 5px 10px;
+        min-height: 10px;
+        padding: 3px 10px;
         text-align: left;
     }
 
