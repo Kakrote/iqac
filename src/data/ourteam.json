@@ -1,0 +1,63 @@
+{
+  "intro": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": ["Our", "team"],
+    "text": "Our IQAC team brings together dedicated professionals committed to enhancing the quality of education and institutional processes at our university."
+  },
+  "members": [
+    {
+      "initials": "RD",
+      "name": "Er. Rajesh Deorari",
+      "role": "Director-IQAC",
+      "tone": "team-portrait-blue"
+    },
+    {
+      "initials": "SJ",
+      "name": "Er. Sudhir Jugran",
+      "role": "Assistant Manager-IQAC",
+      "tone": "team-portrait-sky"
+    }
+  ],
+  "criteria": {
+    "eyebrow": "Quality in action",
+    "title": ["University criterion heads", "& coordinators"],
+    "items": [
+      {
+        "number": "01",
+        "title": "Curricular Aspects",
+        "lead": "Academic Quality Team",
+        "role": "Criterion lead"
+      },
+      {
+        "number": "02",
+        "title": "Teaching & Learning",
+        "lead": "Faculty Development Team",
+        "role": "Criterion lead"
+      },
+      {
+        "number": "03",
+        "title": "Research & Innovation",
+        "lead": "Research Quality Team",
+        "role": "Criterion lead"
+      },
+      {
+        "number": "04",
+        "title": "Infrastructure",
+        "lead": "Campus Quality Team",
+        "role": "Criterion lead"
+      },
+      {
+        "number": "05",
+        "title": "Student Support",
+        "lead": "Student Experience Team",
+        "role": "Criterion lead"
+      },
+      {
+        "number": "06",
+        "title": "Governance",
+        "lead": "Institutional Review Team",
+        "role": "Criterion lead"
+      }
+    ]
+  }
+}

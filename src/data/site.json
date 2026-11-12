@@ -1,7 +1,7 @@
 {
   "brand": { "name": "Uttaranchal University", "subtitle": "Dehradun", "location": "Dehradun, India" },
   "navigation": [
-    { "label": "Our teams", "href": "#teams" },
+    { "label": "Our teams", "href": "/our-team" },
     { "label": "Outcomes", "href": "#outcomes" },
     { "label": "Sustainability", "href": "#sustainability" }
   ],
