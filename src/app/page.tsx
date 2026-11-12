@@ -69,7 +69,7 @@ export default function Home() {
 
             {/* University Quality Statement section*/}
 
-            <section className="statement section-shell">
+            <section id="quality-statement" className="statement section-shell">
                 <Reveal className="statement-copy"><h2>{site.statement.title[0]}<br />{site.statement.title[1]}</h2><p>{site.statement.text}</p><a className="blue-button" href="#publications">{site.statement.action}<span>↗</span></a></Reveal>
                 <Reveal><Placeholder label={images.statement.label} className="wide-placeholder" /></Reveal>
             </section>
@@ -79,7 +79,7 @@ export default function Home() {
 
             {/* Leadership section */}
 
-            <section className="leadership section-shell">
+            <section id="leadership" className="leadership section-shell">
                 <Reveal className="leadership-copy"><h2>{site.leadership.title}</h2><p>{site.leadership.text}</p></Reveal>
                 <LeadershipCarousel />
             </section>

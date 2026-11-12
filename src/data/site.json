@@ -1,10 +1,17 @@
 {
   "brand": { "name": "Uttaranchal University", "subtitle": "Dehradun", "location": "Dehradun, India" },
-  "navigation": [
-    { "label": "Our teams", "href": "/our-team" },
-    { "label": "Outcomes", "href": "#outcomes" },
-    { "label": "Sustainability", "href": "#sustainability" }
-  ],
+  "navigation": {
+    "primary": [
+      { "label": "Our teams", "href": "/our-team" },
+      { "label": "Outcomes", "href": "#outcomes" },
+      { "label": "Sustainability", "href": "#sustainability" }
+    ],
+    "secondary": [
+      { "label": "Quality statement", "href": "/#quality-statement" },
+      { "label": "Leadership messages", "href": "/#leadership" },
+      { "label": "Publications & reports", "href": "/#publications" }
+    ]
+  },
   "hero": {
     "eyebrow": "Internal Quality Assurance Cell",
     "title": ["Our", "commitment to", "educational excellence."],
