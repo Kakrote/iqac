@@ -19,7 +19,7 @@ export default function Header() {
     <>
       <div className="top-strip" />
       <header className={`site-header${isMenuOpen ? " menu-open" : ""}`}>
-        <a className="brand" href="#top" aria-label={`${site.brand.name} home`}>
+        <a className="brand" href="/" aria-label={`${site.brand.name} home`}>
           <span className="brand-symbol">UU</span>
           <span>{site.brand.name}<small>{site.brand.subtitle}</small></span>
         </a>
