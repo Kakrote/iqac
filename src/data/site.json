@@ -3,7 +3,7 @@
   "navigation": {
     "primary": [
       { "label": "Our teams", "href": "/our-team" },
-      { "label": "Outcomes", "href": "#outcomes" },
+      { "label": "Outcomes", "href": "/outcome" },
       { "label": "Sustainability", "href": "#sustainability" }
     ],
     "secondary": [

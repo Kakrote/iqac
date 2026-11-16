@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "title": ["Outcomes of IQAC @", "Uttaranchal University"],
+    "badges": [
+      { "label": "NAAC Accreditation", "asset": "/assests/badges/naac.png" },
+      { "label": "NIRF Ranking", "asset": "/assests/badges/wuri.png" },
+      { "label": "NIRF Ranking", "asset": "/assests/badges/wuri.png" },
+      { "label": "NAAC Accreditation", "asset": "/assests/badges/naac.png" }
+    ],
+    "previousLabel": "Previous outcome",
+    "nextLabel": "Next outcome"
+  },
+  "initiatives": {
+    "title": ["IQAC Initiatives @", "Uttaranchal University"],
+    "items": [
+      { "title": "Carbon Footprint", "description": "Annual sustainability reporting and institutional practices that help the university understand and reduce its environmental impact.", "asset": "/assests/bg/vission.jpg", "alt": "Sustainability initiative at Uttaranchal University" },
+      { "title": "Quality Assurance", "description": "Documented quality initiatives, reviews and improvement actions that support a culture of continuous institutional excellence.", "asset": "/assests/bg/objective.jpg", "alt": "Quality assurance initiative at Uttaranchal University" }
+    ],
+    "viewAll": "View all"
+  },
+  "quote": { "lines": ["योगस्थः कुरु कर्माणि संगं त्यक्त्वा धनंजय", "सिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते"] },
+  "videos": {
+    "title": "Videos Gallery",
+    "text": "Explore conversations and stories from the people shaping quality and progress across our university.",
+    "items": [
+      { "date": "23 May 2026", "role": "Associate Director TERI", "title": "Prof. Livleen K. Kahlon", "asset": "/assests/hero/h.jpg" },
+      { "date": "23 May 2026", "role": "Associate Director TERI", "title": "Prof. Livleen K. Kahlon", "asset": "/assests/hero/h.jpg" },
+      { "date": "23 May 2026", "role": "Associate Director TERI", "title": "Prof. Livleen K. Kahlon", "asset": "/assests/hero/h.jpg" }
+    ]
+  },
+  "news": {
+    "title": ["News &", "Events"],
+    "text": "Stay informed about quality assurance initiatives, upcoming events and achievements from Uttaranchal University.",
+    "items": [
+      { "category": "IQAC", "date": "24 May 2025", "title": "Training on Eco-Friendly Holi Colours Organized by Uttaranchal University", "asset": "/assests/bg/objective.jpg" },
+      { "category": "IQAC", "date": "24 May 2025", "title": "Training on Eco-Friendly Holi Colours Organized by Uttaranchal University", "asset": "/assests/bg/objective.jpg" },
+      { "category": "IQAC", "date": "24 May 2025", "title": "Training on Eco-Friendly Holi Colours Organized by Uttaranchal University", "asset": "/assests/bg/objective.jpg" }
+    ]
+  }
+}
