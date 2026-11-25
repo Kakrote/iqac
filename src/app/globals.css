@@ -189,7 +189,8 @@ p {
     visibility: visible;
 }
 
-.menu-panel a {
+.menu-panel a,
+.menu-panel .submenu-trigger {
     align-items: center;
     color: var(--blue);
     display: flex;
@@ -202,7 +203,8 @@ p {
     transition: background .2s ease, color .2s ease;
 }
 
-.menu-panel a:hover {
+.menu-panel a:hover,
+.menu-panel .submenu-trigger:hover {
     background: var(--amber);
     color: var(--blue-deep);
 }
@@ -244,7 +246,59 @@ p {
     padding: 13px 0 13px 12px;
 }
 
+.desktop-menu-links .submenu-trigger {
+    padding: 13px 12px;
+}
+
 .mobile-menu-links {
+    display: none;
+}
+
+.menu-item-row {
+    align-items: center;
+    display: flex;
+}
+
+.menu-item-row > a {
+    flex: 1;
+}
+
+.submenu-trigger {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: var(--blue);
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    font: inherit;
+    justify-content: space-between;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.submenu-chevron {
+    border-bottom: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+    height: 8px;
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform .2s ease;
+    width: 8px;
+}
+
+.submenu-trigger[aria-expanded="true"] .submenu-chevron {
+    transform: rotate(225deg) translateY(-2px);
+}
+
+.submenu {
+    border-left: 1px solid var(--line);
+    display: grid;
+    gap: 8px;
+    margin: 4px 0 4px 18px;
+    padding-left: 8px;
+}
+
+.submenu[hidden] {
     display: none;
 }
 
@@ -1213,6 +1267,16 @@ footer {
         min-height: 10px;
         padding: 3px 10px;
         text-align: left;
+    }
+
+    .mobile-menu-links .submenu-trigger {
+        min-height: 10px;
+        padding: 3px 10px;
+    }
+
+    .submenu a {
+        color: var(--muted);
+        font-size: 13px;
     }
 
     .section-shell {

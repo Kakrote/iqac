@@ -3,11 +3,21 @@
   "navigation": {
     "primary": [
       { "label": "Our teams", "href": "/our-team" },
-      { "label": "Outcomes", "href": "/outcome" },
+      {
+        "label": "Outcomes",
+        "href": "/outcome",
+        "children": [
+          { "label": "Initiatives", "href": "/outcome#initiatives-title" }
+        ]
+      },
       { "label": "Sustainability", "href": "#sustainability" }
     ],
     "secondary": [
-      { "label": "Quality statement", "href": "/#quality-statement" },
+      { "label": "Quality statement","children":[
+        {
+          "label":"report","href":"/"
+        }
+      ] },
       { "label": "Leadership messages", "href": "/#leadership" },
       { "label": "Publications & reports", "href": "/#publications" }
     ]

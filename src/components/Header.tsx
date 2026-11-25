@@ -3,8 +3,51 @@
 import { useEffect, useState } from "react";
 import site from "@/data/site.json";
 
+type NavigationItem = {
+  label: string;
+  href?: string;
+  children?: NavigationItem[];
+};
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openDropdownKey, setOpenDropdownKey] = useState<string | null>(null);
+  const mobileNavigation: NavigationItem[] = [...site.navigation.primary, ...site.navigation.secondary];
+
+  const renderNavigationItems = (items: NavigationItem[], menu: "desktop" | "mobile") =>
+    items.map((item, index) => {
+      const dropdownKey = `${menu}-${index}`;
+      const isDropdownOpen = openDropdownKey === dropdownKey;
+      const submenuId = `${dropdownKey}-submenu`;
+      const hasChildren = Boolean(item.children?.length);
+
+      return (
+        <div className={`${menu}-menu-item`} key={`${item.href ?? item.label}-${item.label}`}>
+          <div className="menu-item-row">
+            {hasChildren ? (
+              <button
+                className="submenu-trigger"
+                type="button"
+                aria-expanded={isDropdownOpen}
+                aria-controls={submenuId}
+                onClick={() => setOpenDropdownKey(isDropdownOpen ? null : dropdownKey)}
+              >
+                {item.label}<span className="submenu-chevron" aria-hidden="true" />
+              </button>
+            ) : (
+              <a href={item.href} onClick={() => setIsMenuOpen(false)}>{item.label}</a>
+            )}
+          </div>
+          {hasChildren && (
+            <div className="submenu" id={submenuId} hidden={!isDropdownOpen}>
+              {item.children?.map((child) => (
+                <a key={`${child.href ?? child.label}-${child.label}`} href={child.href} onClick={() => setIsMenuOpen(false)}>{child.label}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    });
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
@@ -45,19 +88,15 @@ export default function Header() {
           onClick={() => setIsMenuOpen(false)}
         />
         <nav className="menu-panel" id="mobile-navigation" aria-label="Menu navigation" aria-hidden={!isMenuOpen}>
-            <button className="menu-close" type="button" aria-label="Close navigation" onClick={() => setIsMenuOpen(false)}>
-              <span /><span />
-            </button>
-            <div className="desktop-menu-links">
-              {site.navigation.secondary.map((item) => (
-                <a key={item.href} href={item.href} onClick={() => setIsMenuOpen(false)}>{item.label}</a>
-              ))}
-            </div>
-            <div className="mobile-menu-links">
-              {[...site.navigation.primary, ...site.navigation.secondary].map((item) => (
-                <a key={item.href} href={item.href} onClick={() => setIsMenuOpen(false)}>{item.label}</a>
-              ))}
-            </div>
+          <button className="menu-close" type="button" aria-label="Close navigation" onClick={() => setIsMenuOpen(false)}>
+            <span /><span />
+          </button>
+          <div className="desktop-menu-links">
+            {renderNavigationItems(site.navigation.secondary, "desktop")}
+          </div>
+          <div className="mobile-menu-links">
+            {renderNavigationItems(mobileNavigation, "mobile")}
+          </div>
         </nav>
       </header>
     </>
