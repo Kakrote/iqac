@@ -293,9 +293,16 @@ p {
 .submenu {
     border-left: 1px solid var(--line);
     display: grid;
-    gap: 8px;
-    margin: 4px 0 4px 18px;
-    padding-left: 8px;
+    gap: 4px;
+    margin: 3px 0 3px 14px;
+    padding-left: 6px;
+}
+
+.menu-panel .submenu a {
+    font-size: 12px;
+    line-height: 1.15;
+    min-height: 22px;
+    padding: 2px 6px;
 }
 
 .submenu[hidden] {
@@ -1272,11 +1279,6 @@ footer {
     .mobile-menu-links .submenu-trigger {
         min-height: 10px;
         padding: 3px 10px;
-    }
-
-    .submenu a {
-        color: var(--muted);
-        font-size: 13px;
     }
 
     .section-shell {

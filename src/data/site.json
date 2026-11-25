@@ -13,9 +13,18 @@
       { "label": "Sustainability", "href": "#sustainability" }
     ],
     "secondary": [
-      { "label": "Quality statement","children":[
+      { "label": "IQAC","children":[
         {
-          "label":"report","href":"/"
+          "label":"Composition","href":"/"
+        },
+        {
+          "label":"Strategies","href":"/"
+        },
+        {
+          "label":"Functions","href":"/"
+        },
+        {
+          "label":"Benefits","href":"/"
         }
       ] },
       { "label": "Leadership messages", "href": "/#leadership" },
