@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": "Functions | IQAC",
+    "breadcrumbLabel": "Functions"
+  },
+  "process": {
+    "heading": "Internal Quality Assurance Cell (IQAC)",
+    "steps": [
+      {
+        "title": "Analyze",
+        "description": "Study quality needs and examine institutional performance."
+      },
+      {
+        "title": "Evaluate",
+        "description": "Determine the significance, quality, and value of evidence."
+      },
+      {
+        "title": "Planning",
+        "description": "Organise a process of thinking and action to achieve desired goals."
+      },
+      {
+        "title": "Improve",
+        "description": "Make something better in a particular way."
+      }
+    ]
+  },
+  "functions": {
+    "eyebrow": "Quality assurance in practice",
+    "title": ["Functions of", "the IQAC"],
+    "items": [
+      "Development and application of quality benchmarks.",
+      "Parameters for various academic and administrative activities of the institution.",
+      "Facilitate the creation of a learner-centric environment conducive to quality education and faculty maturation to adopt the required knowledge and technology for participatory teaching and learning.",
+      "Collection and analysis of feedback from all stakeholders on quality-related institutional processes.",
+      "Dissemination of information on various quality parameters to all stakeholders.",
+      "Organisation of inter- and intra-institutional workshops and seminars on quality-related themes, and promotion of quality circles.",
+      "Documentation of various programmes and activities leading to quality improvement.",
+      "Act as a nodal agency of the institution for coordinating quality-related activities, including adoption and dissemination of best practices.",
+      "Development and maintenance of an institutional database through MIS for maintaining and enhancing institutional quality.",
+      "Periodical conduct of Academic and Administrative Audit and its follow-up.",
+      "Preparation and submission of the Annual Quality Assurance Report (AQAR) as per the guidelines and parameters of NAAC."
+    ]
+  }
+}

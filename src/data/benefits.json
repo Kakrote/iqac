@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": "Benefits | IQAC",
+    "breadcrumbLabel": "Benefits"
+  },
+  "spirit": {
+    "eyebrow": "A shared commitment",
+    "title": "Esprit de Corps",
+    "text": "The team spirit in the IQAC is not to serve as a data center, but rather as a way to bring together administrators, teachers, students, support staff, and all other stakeholders, allowing each of them to contribute to the university’s overall improvement.",
+    "emphasis": "not to serve as a data center"
+  },
+  "benefits": {
+    "eyebrow": "A culture of quality",
+    "title": ["Benefits of", "IQAC"],
+    "items": [
+      "Clear education practices",
+      "Internalization of a quality culture",
+      "Coordination among departments",
+      "Professional activities",
+      "Organised documentation",
+      "Focus on research and development",
+      "Greater transparency",
+      "A global platform for students",
+      "Better institutional functioning",
+      "Ranking and accreditation"
+    ]
+  },
+  "contributions": {
+    "eyebrow": "Quality assurance in action",
+    "title": ["IQAC will", "facilitate and contribute to"],
+    "items": [
+      "Ensure clarity and focus in institutional functioning towards quality enhancement.",
+      "Ensure internalization of the quality culture.",
+      "Ensure enhancement and coordination among institutional activities and institutionalize good practices.",
+      "Provide a sound basis for decision-making to improve institutional functioning.",
+      "Act as a dynamic system for quality changes in higher education institutions.",
+      "Build an organized methodology for documentation and internal communication."
+    ]
+  }
+}
