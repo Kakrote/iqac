@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": ["IQAC", "Composition"],
+    "breadcrumbLabel": "Composition"
+  },
+  "content": {
+    "eyebrow": "Governance & representation",
+    "title": ["A shared", "quality mandate"],
+    "intro": "The IQAC brings together university leadership and voices from across the academic community.",
+    "note": "Explore the representatives who contribute to quality assurance across the university.",
+    "footnote": "The composition will be updated as verified membership details are made available.",
+    "emptyState": "Member details will appear here once they are added."
+  },
+  "groups": [
+    {
+      "title": "Chairperson",
+      "members": [
+        {
+          "initials": "DB",
+          "name": "Prof. (Dr.) Dharam Buddhi",
+          "role": "Vice Chancellor"
+        }
+      ]
+    },
+    { "title": "Administrative Heads", "members": [
+
+    ] },
+    { "title": "Teachers", "members": [
+
+    ] },
+    { "title": "Research & Innovation Head", "members": [
+
+    ] },
+    { "title": "Senior Administrative Officers", "members": [
+
+    ] },
+    { "title": "University Student Representative", "members": [
+
+    ] },
+    { "title": "Representative Alumni Association", "members": [
+
+    ] },
+    { "title": "External Members", "members": [
+    ] },
+    { "title": "IQAC Coordinator", "members": [
+    ] }
+  ]
+}
