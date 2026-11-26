@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": "Strategies | IQAC",
+    "breadcrumbLabel": "Strategies"
+  },
+  "intro": {
+    "eyebrow": "Continuous improvement",
+    "title": ["A cycle of", "quality in action"],
+    "text": "IQAC strengthens institutional quality through a continuous cycle of building culture, embedding good practice, enabling improvement, and reviewing outcomes.",
+    "cycleTitle": "The quality cycle"
+  },
+  "cycle": [
+    {
+      "title": "Build quality culture",
+      "description": "Develop quality awareness and shared responsibility across the university.",
+      "focus": "Culture"
+    },
+    {
+      "title": "Embed quality practice",
+      "description": "Integrate quality into the university’s everyday academic and administrative work.",
+      "focus": "Practice"
+    },
+    {
+      "title": "Enable improvement",
+      "description": "Use relevant processes and evidence to guide institutional improvement.",
+      "focus": "Improve"
+    },
+    {
+      "title": "Review and standardise",
+      "description": "Monitor outcomes and review processes to sustain effective standards.",
+      "focus": "Review"
+    }
+  ],
+  "mechanisms": {
+    "eyebrow": "How we put strategy to work",
+    "title": ["Mechanisms for", "quality assurance"],
+    "items": [
+      "Ensure timely, efficient, and progressive performance across academic, administrative, and financial functions.",
+      "Optimise and integrate contemporary approaches to teaching and learning.",
+      "Promote relevant, high-quality academic research programmes.",
+      "Strengthen the credibility of assessment and evaluation processes.",
+      "Support equitable access to, and affordability of, academic programmes.",
+      "Ensure adequate maintenance and appropriate allocation of support structures and services.",
+      "Share research findings and build networks with institutions in India and abroad."
+    ]
+  },
+  "strategies": {
+    "eyebrow": "Our strategic priorities",
+    "title": ["IQAC", "strategic goals 2020-2025"],
+    "items": [
+      {
+        "title": "Goal 1",
+        "text": "A productive workplace with clear expectations and a commitment to excellence, as well as an ecosystem."
+      },
+      {
+        "title": "Goal 2",
+        "text": "Recognizing ability in the context of equity issues for potential students."
+      },
+      {
+        "title": "Goal 3",
+        "text": "A learning atmosphere that gives students the best chance of succeeding."
+      },
+      {
+        "title": "Goal 4",
+        "text": "Research with high possible impact and the nation’s economic development."
+      },
+      {
+        "title": "Goal 5",
+        "text": "Strong relationships with partners."
+      },
+      {
+        "title": "Goal 6",
+        "text": "High-quality infrastructure to enable teaching-learning, research, and community engagement."
+      },
+      {
+        "title": "Goal 7",
+        "text": "Governance and management practices that are in accordance with the mission and values of the university."
+      },
+      {
+        "title": "Goal 8",
+        "text": "Sustainable practices for more effective resource usage and improved environmental performance."
+      },
+      {
+        "title": "Goal 9",
+        "text": "A growth path to support the university activities."
+      }
+    ]
+  }
+}
