@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": "NIRF",
+    "breadcrumbLabel": "NIRF"
+  },
+  "documents": [
+    { "title": "NIRF Report", "pdf": "/nirf/NIRF-Report.pdf" },
+    { "title": "NIRF Data", "pdf": "/nirf/NIRF-Data.pdf" },
+    { "title": "NIRF Certificate", "pdf": "/nirf/NIRF-Certificate.pdf" }
+  ]
+}

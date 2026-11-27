@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": "NAAC",
+    "breadcrumbLabel": "NAAC"
+  },
+  "documents": [
+    {
+      "title": "SSR Cycle 1",
+      "pdf": "/naac/SSR-Cycle-1.pdf",
+      "preview": "/assests/badges/naac.png",
+      "featured": false
+    },
+    {
+      "title": "QIF",
+      "pdf": "/naac/QIF.pdf",
+      "preview": "/assests/badges/naac.png",
+      "featured": false
+    },
+    {
+      "title": "AQAR",
+      "pdf": "/naac/AQAR.pdf",
+      "preview": "/assests/badges/naac.png",
+      "featured": false
+    },
+    {
+      "title": "IIQA",
+      "pdf": "/naac/IIQA.pdf",
+      "preview": "/assests/badges/naac.png",
+      "featured": true
+    },
+    {
+      "title": "Peer Team Report Cycle 1",
+      "pdf": "/naac/Peer-Team-Report-Cycle-1.pdf",
+      "preview": "/assests/badges/naac.png",
+      "featured": false
+    },
+    {
+      "title": "NAAC Certificate",
+      "pdf": "/naac/NAAC-Certificate.pdf",
+      "preview": "",
+      "featured": false
+    },
+    {
+      "title": "NAAC Reforms-2024",
+      "pdf": "/naac/NAAC-Reforms-2024.pdf",
+      "preview": "",
+      "featured": false
+    }
+  ]
+}

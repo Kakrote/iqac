@@ -29,13 +29,13 @@
       ] },
       { "label": "Rankings","children" :[
         {
-          "label":"AISHE","href":"/rankings#national"
+          "label":"AISHE","href":"/aishe"
         },
         {
-          "label":"NAAC","href":"/rankings#international"
+          "label":"NAAC","href":"/naac"
         },
         {
-          "label":"NIRF","href":"/rankings#national"
+          "label":"NIRF","href":"/nirf"
         }
       ]},
       { "label": "Publications & reports", "href": "/#publications" }

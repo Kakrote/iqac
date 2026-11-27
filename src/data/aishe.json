@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "eyebrow": "Internal Quality Assurance Cell",
+    "title": "AISHE",
+    "breadcrumbLabel": "AISHE"
+  },
+  "documents": [
+    { "title": "AISHE Report", "pdf": "/aishe/AISHE-Report.pdf" },
+    { "title": "AISHE Certificate", "pdf": "/aishe/AISHE-Certificate.pdf" },
+    { "title": "AISHE Submission", "pdf": "/aishe/AISHE-Submission.pdf" }
+  ]
+}
