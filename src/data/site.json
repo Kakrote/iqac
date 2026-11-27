@@ -27,7 +27,17 @@
           "label":"Benefits","href":"/benefits"
         }
       ] },
-      { "label": "Leadership messages", "href": "/#leadership" },
+      { "label": "Rankings","children" :[
+        {
+          "label":"AISHE","href":"/rankings#national"
+        },
+        {
+          "label":"NAAC","href":"/rankings#international"
+        },
+        {
+          "label":"NIRF","href":"/rankings#national"
+        }
+      ]},
       { "label": "Publications & reports", "href": "/#publications" }
     ]
   },
